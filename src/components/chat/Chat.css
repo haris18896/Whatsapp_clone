@@ -1,0 +1,6 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    /* 65% of the area */
+    flex: 0.65;
+}

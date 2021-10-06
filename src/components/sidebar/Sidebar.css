@@ -1,0 +1,6 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    /* 35% of the area */
+    flex: 0.35;
+}
