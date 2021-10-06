@@ -1,18 +1,3 @@
-# Whatsapp_clone
-
-```js
-// firebase.json
-{
-  "hosting": {
-    // ...
-    "headers": [
-      {"source": "/service-worker.js", "headers": [{"key": "Cache-Control", "value": "no-cache"}]}
-    ]
-    // ...
-```
-
-```js
-// /src/serviceWorker.js
 // /src/serviceWorker.js
 // This optional code is used to register a service worker.
 // register() is not called by default.
@@ -151,5 +136,3 @@ const isLocalhost = Boolean(
       });
     }
   }
-```
-
