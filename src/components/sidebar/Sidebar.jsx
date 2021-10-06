@@ -7,6 +7,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
 
 import { Avatar, IconButton } from '@mui/material';
+import SidebarChat from '../sidebarChat/SidebarChat';
 
 function Sidebar() {
     return (
@@ -36,6 +37,12 @@ function Sidebar() {
                     <SearchIcon />
                     <input placeholder="Search or start new chat" type="text" />
                 </div>
+            </div>
+
+            <div className="sidebar__chats">
+                <SidebarChat />
+                <SidebarChat />
+                <SidebarChat />
             </div>
 
 

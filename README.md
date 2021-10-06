@@ -156,6 +156,55 @@ with the help of `outline-width:0;` property in `css` of the input it will disab
 ---
 ---
 
+### `Sidebar chats`
+```js
+// /src/SidebarChat.js
+import { Avatar } from '@mui/material';
+import React from 'react';
+import './SidebarChat.css';
+
+
+function SidebarChat() {
+    return (
+        <div className="sidebarChat">
+            <Avatar />
+
+            <div className="sidebarChat__info">
+                <h2>Room name</h2>
+                <p>This is the last Message</p>
+            </div>
+        </div>
+    )
+}
+
+export default SidebarChat
+
+```
+
+```css
+/* /src/SidebarChat.css */
+.sidebarChat{
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.sidebarChat:hover{
+    background: #f6f6f6;
+}
+
+.sidebarChat__info > h2{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.sidebarChat__info{
+    margin-left: 15px;
+}
+```
+
+
 
 
 
