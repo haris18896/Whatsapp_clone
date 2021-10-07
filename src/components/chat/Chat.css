@@ -69,3 +69,45 @@
     margin-left: auto;
     background-color: #75d69a;
 }
+
+
+.chat__footer{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+
+.chat__footer > form{
+    display: flex;
+    flex: 1;
+}
+
+.chat__footer > form > input {
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    outline-width: 0;
+}
+
+.chat__footer > form > button {
+    display: none;
+    border: none;
+}
+
+.chat__footer > .MuiSvgIcon-root{
+    padding: 10px;
+    color: gray;
+}
+
+.chat__footer > form > button > .MuiSvgIcon-root{
+    padding: 10px;
+    color: #55a373;
+}
+
+.chat__footer > form > .MuiSvgIcon-root{
+    padding: 10px;
+    color: lightgray;
+}
