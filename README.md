@@ -237,9 +237,48 @@ now we can go to the `Chat.js` component and distructure the `messages` prop.
 ---
 ---
 
+### `Submit Message on Enter`
 
 
+```js
+// /src/component/chat/Chat.js
+//....
+import axios from '../../axios.js'
 
+
+function Chat({ messages}) {
+
+    const [input, setInput] = useState('');
+
+    const sendMessage = async (e) => {
+        e.preventDefault();
+
+         axios.post('/messages/new', {
+            message: input,
+            name: "Haris",
+            timestamp: "Just Now",
+            received: true
+        });
+
+        setInput('');
+    }
+
+    return (
+        //......
+        //........
+        //.........
+            <div className="chat__footer">
+                <EmojiEmotionsIcon />
+                <form>
+                    <input value={input} onChange={e => setInput(e.target.value)} placeholder="Type a message" type="text" />
+                    <button onClick={sendMessage} type="submit">
+                        <SendIcon />
+                    </button>
+                    <MicIcon />
+                </form>
+            </div>
+
+```
 
 
 
